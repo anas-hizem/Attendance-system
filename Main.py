@@ -24,16 +24,12 @@ cap.set(4,480)
 
 imgBackground = cv2.imread('resources/background.png')
 
-
 #importing the mode pictures into a list
 folderModePath = 'resources/Modes'
 modePathList = os.listdir((folderModePath))
 imgModeList = []
 for path in modePathList :
     imgModeList.append(cv2.imread(os.path.join(folderModePath , path)))
-
-
-
 
 #load the encoding file
 print("Loading Encode file")
